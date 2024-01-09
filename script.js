@@ -73,3 +73,11 @@ function search() {
       });
     }
   }
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+if (isMobileDevice()) {
+    window.location.href = 'https://xunhang-website.github.io/Limit/'; 
+  }
