@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: rgba(0, 0, 0, .2);
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    /* 600px 宽度以下的样式 */
+    .responsive-text {
+      font-size: 1em; /* 根据需要调整字体大小 */
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec1 {
+    background-color: #015544;
+    width: calc(100% - 200px); /* 计算宽度，减去左右各 100px 的边距 */
+    margin: 0 auto; /* 在水平方向上居中 */
+    padding: 100px;
+}
+
+.sec h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sec h2, h3, h4, h5, h6{
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sec p, li{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+    border: 2px solid red;
+    padding: 3px;
+}
+
+.highlight-text {
+      background-color: red;
+}
+
+  .search-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+table {
+    width: calc(100% - 30px);
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+th, td {
+    border-top: 0px;
+    border-bottom: 1px dashed #ffffff;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 5px;
+    text-align: left;
+    color: white;
+}
